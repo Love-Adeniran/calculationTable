@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        header{
+            background-color: bisque;
+            padding: 10px;
+            margin: 0;
+            text-align: center;
+            box-shadow: 5px 10px 20px rgb(169, 168, 168);
+        }
+        header h1{
+            border: 5px solid #fff;
+            display: inline-block;
+            border-radius: 20px;
+            padding: 5px;
+        }
+        h1{
+            display: inline-block;
+            border: 5px solid burlywood;
+            border-radius: 20px;
+            padding: 5px;
+            /* margin: 10px 340px; */
+            color: #676666;
+        }
+        .evaluation{
+            width: 20vw;
+            height: 30vh;
+            /* margin: 2px; */
+            background-color: rgb(250, 223, 188);
+            padding: 10px;
+            text-align: center;
+            box-sizing: border-box;
+            border-radius:0 20px;
+            box-shadow: 5px 8px 22px #808080;
+            /* display: inline-block; */
+            
+        }
+        .evaluation input{
+            width: 50%;
+            margin: 5px;
+            padding: 5px;
+            border-radius: 30px;
+        }
+        .evaluation button{
+            padding: 5px;
+            background-color: #2e2e2e;
+            border: 2px solid #2e2e2e;
+            border-radius: 10px;
+            color: #fff;
+            margin: 5px;
+        } 
+        .note{
+            width: 20vw;
+            height: 40vh;
+            /* margin: 0 50px; */
+            background-color: rgb(250, 223, 188);
+            padding: 10px;
+            text-align: center;
+            box-sizing: border-box;
+            border-radius:0 20px;
+            box-shadow: 5px 8px 22px grey;
+            /* float: right; */
+            /* display: inline-block; */
+        }
+        #disp{
+            /* margin: 100px 350px; */
+            position: absolute;
+            top: 20%;
+            left: 22%;
+        }  
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Evaluation Table</h1>
+    </header>
+    <!-- <h1>Table</h1> -->
+    <div class="evaluation">
+        <input type="number" placeholder="rows" id="row"><br>
+        <input type="number" placeholder="columns" id="column"><br><br>
+        <button onclick="addition()">Add</button>
+        <button onclick="subtract()">Subtract</button>
+        <button onclick="multiply()">multiply</button>
+        <button onclick="divide()">Divide</button>
+        
+    </div>
+    <div class="note">
+        <p>This is an assignment given to generate tables for the following arithmetic:</p>
+        <ul>
+            <li>Addition </li>
+            <li>Subtraction</li>
+            <li>Multiplication</li>
+            <li>Division</li>
+        </ul>
+    </div>
+    
+    <table id="disp" border="1">
+    </table>
+    
+    <script src="loops2d.js"></script>
+</body>
+</html>
